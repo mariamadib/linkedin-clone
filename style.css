@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f2ef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ========================Header==============================================*/
+.logo img{
+object-fit: contain;
+height: 40px;
+margin-right: 10px;
+cursor: pointer;
+}
+
+.header{
+    width: 100%;
+    position: sticky;
+    display: flex;
+    top: 0;
+    z-index: 999;
+    justify-content: space-evenly;
+    border-bottom: 0.1px solid lightgray;
+    padding: 10px;
+    background-color: white;
+}
+
+.logo{
+    display: flex;
+}
+
+.icons_list{
+    display: flex;
+}
+
+.search{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: 22px;
+    color: gray;
+    background-color: #eef3f8;
+}
+
+.search input{
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    color: gray;
+    cursor: pointer;
+}
+
+.icons:hover {
+    color: black;
+}
+
+.icons h3 {
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+.icons_icon{
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+.icons .down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons_list a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    width: 90px;
+    text-align: center;
+    cursor: pointer;
+    color: gray;
+}
+.icons_list a:hover{
+    text-decoration: underline;
+}
+/*=============================================================================*/
+.container{
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    gap: 1.4rem;
+    width: 95%;
+    margin: 1.5rem auto;
+}
+
+/*===============================siderbar===================================*/
+aside .sidebar{
+    position: sticky;
+    top: 80px;
+    /*flex: 0.2;*/
+    border-radius: 10px;
+    text-align: center;
+    height: fit-content;
+
+}
+
+/*===========================sidebartop==========================*/
+.sidebar_top img{
+    margin-bottom: -20px;
+    width: 100%;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+
+}
+
+.sidebar_top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+.sidebar .sidebar_top a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.sidebar_topAvatar{
+    font-size: 40px;
+}
+/*=================================================*/
+
+/* ===============================stats==========================*/
+.sidebar_stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-bottom: 0;
+    background-color: white;
+    padding-bottom: 10px;
+    
+
+}
+.sidebar_stat{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between
+    
+    
+}
+.premium{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-bottom: 0;
+    background-color: white;
+    padding-bottom: 10px;
+
+}
+.premium h6{
+    color: gray;
+    font-weight: 100;
+    margin-left: 0.2rem;
+}
+.premium a{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 0rem;
+    font-size: 0.8rem;
+    color: black;
+}
+.premium a i{
+    color: rgb(211, 211, 33);
+}
+.my_items{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgrey;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.my_items a{
+    position: relative;
+    top: 7%;
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.4rem 0 0 1rem;
+    text-decoration: none;
+    color: gray;
+    cursor: pointer;
+}
+
+.sidebar .sidebar_stats .sidebar_stat:hover{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.sidebar_stat p{
+    color: gray;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar_statNumber{
+    font-weight: bold;
+    color: #0a66c2 !important;
+}
+.sidebar_top h4{
+    color: gray;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.sidebar_top h2{
+    font-size: 18px;
+}
+/*=============================================================================*/
+/*=========================sidebarbottom======================================*/
+.sidebar_bottom{
+    text-align: left;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.sidebar_recentItem{
+    display: flex;
+    font-size: 13px;
+    color: gray;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.sidebar_recentItem:hover{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+.sidebar_hash{
+    margin: 0 10px;
+}
+
+.sidebar_bottom p{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.sidebar_bottom .groups p:first-child{
+    color:#0a66c2;
+    font-weight: bolder;
+}
+.sidebar_bottom .groups{
+    margin-top: 2rem;
+}
+.sidebar_bottom .groups .group_one{
+    display:flex;
+    align-items: center;
+    margin-bottom: 5px;
+    gap: 0.5rem;
+    margin-top: 0.7rem;
+    color: rgb(83, 83, 83);
+}
+.sidebar_bottom .groups .group_one:hover{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+.shows {
+    display: flex;
+    margin-top: 1rem;
+    gap: 0.5rem;
+    color: gray;
+}
+.sidebar_bottom .shows p:first-child{
+    color: gray;
+}
+.shows:hover{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.events{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+}
+.events p:first-child:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.events i{
+    color: gray;
+    cursor: pointer;
+}
+.discover{
+    
+    text-align: center;
+    margin-top: 1rem;;
+    border-top: 1px solid rgb(144, 144, 144);
+    padding-top: 1rem;
+}
+.discover a{
+    text-decoration: none;
+    color: gray;
+}
+/* =========================================================*/
+                      /* FEED Section*/
+
+main{
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    height: 20vh;
+
+}
+main .main_section{
+    background: #fff;
+    border-radius: 10px;
+    height: 30vh;
+    width: 100%;
+    
+}
+
+main .main_section .main_input img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+main .main_section .main_input{
+display: flex;
+gap: 1rem;
+padding: 1rem;
+}
+
+main .main_section .main_input input{
+    border-radius: 5rem;
+    border: 1px solid gray;
+    width: 100%;
+    height: 45px;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    /*padding-left: 15px;*/
+    }
+main .main_section .main_input input:hover{
+    background: rgb(233, 233, 233);
+}
+
+
+
+
+ /*.main_input{
+    border: 1px solid lightgray;
+    border-radius: 5rem;
+    display: flex;
+    width: 100%;
+    padding: 0 0.5rem;
+    color: gray;
+    
+}  
+*/
+                  
+main .main_section .options{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 0.6rem 2rem;  
+}
+main .main_section .options .option{
+    display: flex;
+    gap: 1rem;
+    padding: 0.6rem 0.5rem;
+    cursor: pointer;
+    color: gray;
+
+}
+main .main_section .options .option h5{
+    font-weight: 400;
+}
+main .main_section .options .option:hover{
+    background: rgb(233, 233, 233);
+    border-radius: 0.2rem;
+}
+
+main .main_input{
+    display: flex;
+    gap: 1rem;
+}
+
+main .posts{
+    background: #fff;
+    border-radius: 10px;
+    height: 30vh;
+    padding: 10px;
+    margin-top: 2rem;
+}
+.post_header{
+    display: flex;
+    margin-bottom: 10px;
+}
+.post_info{
+    margin-left: 10px;
+}
+.post_info p{
+    font-size: 12px;
+    color: gray;
+}
+.post_info h2{
+    font-size: 15px;
+}
+.right_side{
+    background: #fff;
+    border-radius: 10px;
+    width: 80%;
+    height: 50vh;
+}
+.right_side .news{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+.right_side .news h4{
+    font-weight: 400;
+}
+.right_side .latest_news{
+    margin: 0.5rem 1rem;
+}
+.right_side .latest_news .one{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.right_side .latest_news .one h5{
+    font-weight: 600;
+}
+.right_side .latest_news .one i{
+    font-size: 0.5rem;
+    color: #0a66c2;
+}
+.right_side .latest_news .hours{
+    margin: 0 1.5rem;
+    font-size: 0.8rem;
+    color: gray;
+}
+.right_side .show_more{
+display: flex;
+align-items: center;
+margin: 1rem;
+color: gray;
+}
+.right_side .show_more h5{
+    font-weight: 400;
+}
